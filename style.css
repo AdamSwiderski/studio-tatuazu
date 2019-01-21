@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navi {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -150px;
+    width: 100%;
+    transition: .5s linear;
+    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
+    height: 50px;
+}
+
+.active {
+    position: relative;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .7);
+    transition: .5s linear;
+}
+
+.logo {
+    width: 18%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 100%;
+}
+
+.navi-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 85%;
+    padding-right: 10px;
+}
+
+.navi-item {
+    width: 25%;
+    list-style: none;
+}
+
+.navi-link:hover {
+    color: black;
+}
+
+.navi-link {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+.burger {
+    position: absolute;
+    right: 3%;
+    top: 102%;
+    font-size: 38px;
+    transition: 0.4s linear;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.fas {
+    display: none;
+    z-index: 999;
+    transition: .4s linear;
+}
+
+.show {
+    display: block;
+    z-index: 999;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    background-image: url("img/baner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+}
+
+.banner-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 30px;
+    text-transform: uppercase;
+    background-color: rgba(87, 87, 87, 0.959);
+    color: white;
+}
+
+.about-us {
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: rgba(187, 184, 184, 0.61);
+}
+
+.about-us-text {
+    text-align: justify;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.our-projects {
+    background-color: rgba(187, 184, 184, 0.61);
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.image-project {
+    flex-basis: calc(45% - 5px);
+    margin: 6px;
+    box-shadow: 0 0 2px 2px gray;
+}
+
+.min-image-project {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.our-team {
+    overflow: hidden;
+    background-color: rgba(187, 184, 184, 0.61);
+    padding: 30px 0;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    flex-basis: 100%;
+}
+
+.member-name {
+    margin: 9px 0 2px;
+    font-weight: bold;
+}
+
+.about-member {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.member-img {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    transition: .4s;
+}
+
+.member-img:hover {
+    transform: scale(1.2);
+}
+
+.member-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 100%;
+}
+
+.contact {
+    background-color: rgba(187, 184, 184, 0.61);
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.contacts {
+    background-color: rgba(37, 37, 37, 0.288);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-basis: 50%;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 10px auto;
+}
+
+.icon {
+    color: white;
+    display: block;
+    font-size: 36px;
+    align-self: center;
+}
+
+.contact-text {
+    text-align: center;
+    align-self: center;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.foot {
+    background-color: rgba(187, 184, 184, 0.61);
+    padding-top: 30px;
+}
+
+.foot-text {
+    padding-top: 90px;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media(min-width: 520px) {
+    .navi {
+        height: 60px;
+    }
+
+    .navi-link {
+        font-size: 14px;
+    }
+
+    .burger {
+        font-size: 42px;
+    }
+
+    .banner-title {
+        font-size: 26px;
+    }
+
+    .about-us {
+        padding: 40px 0;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .our-projects {
+        padding: 40px 0;
+    }
+
+    .image-project {
+        flex-basis: calc(30% - 8px);
+        margin: 8px;
+    }
+
+    .our-team {
+        padding: 40px 0;
+    }
+
+    .contact {
+        padding: 40px 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .member {
+        flex-basis: 50%;
+    }
+
+    .logo {
+        width: 13%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navi-link {
+        font-size: 18px;
+    }
+
+    .logo {
+        max-width: 8%;
+    }
+
+    .burger {
+        font-size: 48px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .about-us-text {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .image-project {
+        flex-basis: calc(20% - 8px);
+        margin: 8px;
+    }
+
+    .member-name {
+        font-size: 20px;
+    }
+
+    .about-member {
+        font-size: 16px;
+    }
+
+    .member-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .contact-text {
+        font-size: 17px;
+    }
+
+    .icon {
+        font-size: 38px;
+    }
+
+    .foot-text {
+        padding-top: 150px;
+    }
+
+}
